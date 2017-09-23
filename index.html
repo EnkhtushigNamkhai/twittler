@@ -5,6 +5,8 @@
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
     <script src='application.js'></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
   </head>
   <body>
 
@@ -12,7 +14,7 @@
     <div class = "PopUpBack" id = "PopUpBox-Container">
       <div class = 'PopUpBox'>
         <div class = "Tweets-Container">
-          <h3>User's Timeline</h3>
+          <h3>User's Activities</h3>
           <ul class = 'Tweets'>
           
           </ul>
@@ -27,7 +29,21 @@
 
 
     <div class = "tweet-Container">
-      <h1>Twittler</h1>
+      <h1 class = 'logo'>Welcome to Twittler.</h1>
+
+      <button class = 'newPostLink'>New Post</button>
+
+      <div class = "Post">
+        <h3>Create a Post:</h3>
+        <label>UserName: <input id = "userNameInput"></input></label>
+        <label style = 'display: block'>Content: <input id ="ContentInput"></input></label>
+        <input id = 'NewPostSubmit' type='submit' value='submit'></input>
+        <input id = 'PostCancel' type='submit' value='cancel'></input>
+      </div>
+
+        
+
+     
       <ul id= "tweet-list">
        <!--  <li class = "tweet">
             <h1 class = "user"></h1>

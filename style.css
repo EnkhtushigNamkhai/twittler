@@ -14,9 +14,16 @@ ul, .Tweets {
 	list-style-type: none;
 }
 
-body {
+.Tweets {	
+	/*background-color: red;*/
 	text-align: center;
-	font-family: Arial;
+}
+
+body {
+	background-color: #5DADE2;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	/*background-image: url(clouds.png);*/
 }
 
 .date {
@@ -33,14 +40,25 @@ body {
 }
 
 
-h1 {
+.logo {
 	color: black;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	padding: 10px;
+	font-size: 5.9vw;
+	height: 100px;
 }
 
+/*.logo:hover {
+	box-shadow: 3px 3px 10px #212F3D;
+	background-color: white;
+	color: ;
+}*/
+
 .tweet-Container {
+	margin: 20px;
 	background-color: #5DADE2;
 	width: auto;
-	float:left;
 }
 
 
@@ -96,27 +114,90 @@ h1 {
 }
 
 .usertweet {
-	background-color: #F2F3F4;
+	background-color: #F2F3F4; /*#F2F3F4*/
 	margin: 5px;
 	padding: 10px;
-	width: 65%;
+	width: 90%;
 	text-align: center;
+	border-radius: 10px;
 	
 }
 
 .Tweets-Container {
 	overflow: scroll;
-	height:95%;
+	height:90%;
 	background-color: white;
 	z-index: 2;
+	width: 100%;
 }
 
 .closeBox {
 	height: auto;
-	background-color: white;
-	padding: 5px;
+	padding: 10px;
+	width: 100%;
 	
 }
+
+.close {
+  background-color: #76D7C4;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 25px;
+  
+  width: 50%;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.close:hover, .newPostLink:hover{
+	background-color: white;
+	color: #76D7C4;
+	box-shadow:0px 0px 0px 3px #76D7C4 inset;
+}
+
+.user {
+	font-family: 'Dancing Script', cursive;
+}
+
+/*styling for the posting a twittler portion*/
+.Post {
+	position: relative;
+	background-color: white;
+	left: 40%;
+	height: 200px;
+	width: 200px;
+	padding: 10px;
+	margin:10px;
+	text-align: center;
+	display: none;
+	
+}
+
+.tweet-Container {
+	height: auto;
+	vertical-align: center;
+}
+
+label {
+	padding: 20px;
+}
+
+.newPostLink {
+  border-radius: 4px;
+  background-color: #76D7C4;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+  width: 200px;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 10px;
+}
+
 
 
 
