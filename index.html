@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="style.css">
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
+    <script src='application.js'></script>
   </head>
   <body>
-    <script>
 
-      $(document).ready(function(){
-        var $body = $('body');
-        $body.html('');
+    <!-- Pop up box-->
+    <div class = "PopUpBack" id = "PopUpBox-Container">
+      <div class = 'PopUpBox'>
+        <div class = "Tweets-Container">
+          <h3>User's Timeline</h3>
+          <ul class = 'Tweets'>
+          
+          </ul>
+        </div>
 
-        var index = streams.home.length - 1;
-        while(index >= 0){
-          var tweet = streams.home[index];
-          var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);
-          $tweet.appendTo($body);
-          index -= 1;
-        }
+        <div class = 'closeBox'>
+          <button class = 'close'> Close </button> 
+        </div>
+            
+      </div>
+    </div> <!-- POP UP END -->
 
-      });
 
-    </script>
+    <div class = "tweet-Container">
+      <h1>Twittler</h1>
+      <ul id= "tweet-list">
+       <!--  <li class = "tweet">
+            <h1 class = "user"></h1>
+            <p class = "date"></p>
+            <p class = "post"></p>
+        </li> -->
+      </ul>
+      <button id="More">See More</button>
+    </div>
+
+ 
+
+
+
   </body>
 </html>
