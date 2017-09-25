@@ -7,14 +7,18 @@
     <script src='application.js'></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
   </head>
   <body>
 
-    <!-- Pop up box-->
+    <!-- Pop up box Timeline-->
     <div class = "PopUpBack" id = "PopUpBox-Container">
       <div class = 'PopUpBox'>
         <div class = "Tweets-Container">
-          <h3>User's Activities</h3>
+          <h3 class = "timelineTitle">User's Activities</h3>
           <ul class = 'Tweets'>
           
           </ul>
@@ -27,12 +31,15 @@
       </div>
     </div> <!-- POP UP END -->
 
+    
 
     <div class = "tweet-Container">
+     <!--  header -->
       <h1 class = 'logo'>Welcome to Twittler.</h1>
-
+      <!-- new Post Button -->
       <button class = 'newPostLink'>New Post</button>
 
+      <!-- new Post input area -->
       <div class = "Post">
         <h3>Create a Post:</h3>
         <label>UserName: <input id = "userNameInput"></input></label>
@@ -40,10 +47,10 @@
         <input id = 'NewPostSubmit' type='submit' value='submit'></input>
         <input id = 'PostCancel' type='submit' value='cancel'></input>
       </div>
+      <!-- Reload button -->
+      <button id="More">Reload</button>
 
-        
-
-     
+      <!-- The tweets container -->
       <ul id= "tweet-list">
        <!--  <li class = "tweet">
             <h1 class = "user"></h1>
@@ -51,12 +58,9 @@
             <p class = "post"></p>
         </li> -->
       </ul>
-      <button id="More">See More</button>
     </div>
-
- 
-
-
-
   </body>
 </html>
+
+
+
